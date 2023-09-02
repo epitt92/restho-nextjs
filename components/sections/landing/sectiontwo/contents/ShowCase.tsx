@@ -57,6 +57,9 @@ const KiteLayout = () => {
 };
 
 const ShowCase = () => {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
   const ShowCaseStyles = {
     Layout: tw.div`px-0 py-20 md:px-20 md:py-20 w-full`,
     Grid: tw.section`grid grid-cols-7 gap-x-5 pt-20`,
@@ -73,10 +76,10 @@ const ShowCase = () => {
           {/* CAROUSEL COMPONENT */}
           <ShowCaseCarousel />
           <Grid>
-            <Left>
+            <Left data-aos="zoom-in-up" data-aos-duration="2000">
               <KiteLayout />
             </Left>
-            <Right>
+            <Right data-aos="zoom-in-down" data-aos-duration="2000">
               <div className="flex gap-x-2">
                 <Image
                   src={

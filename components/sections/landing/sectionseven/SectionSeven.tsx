@@ -5,8 +5,13 @@ import { PageWrapper } from "@/components/layout";
 import Image from "next/image";
 import React from "react";
 import tw from "tailwind-styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SectionSeven = () => {
+  React.useEffect(() => {
+    AOS.init();
+  });
   const SectionSevenStyles = {
     Layout: tw.div`w-full`,
     Center: tw.div`flex flex-col text-white items-center justify-center`,
@@ -47,7 +52,7 @@ const SectionSeven = () => {
             .fill("")
             .map((_) => (
               <>
-                <Card key={_}>
+                <Card key={_} data-aos="zoom-in-up" data-aos-duration="2000">
                   <Input
                     className="w-full bg-[#09161d] border border-slate-300 outline-none focus:border-[#bf9444] focus-within:border-[#bf9444] transition duration-100 rounded-[50px] px-4 py-6 placeholder:text-base text-base text-white font-normal"
                     placeholder="Name*"

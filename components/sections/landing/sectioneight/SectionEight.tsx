@@ -6,8 +6,13 @@ import { PageWrapper } from "@/components/layout";
 import Image from "next/image";
 import React from "react";
 import tw from "tailwind-styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SectionEight = () => {
+  React.useEffect(() => {
+    AOS.init();
+  });
   const SectionEightStyles = {
     Layout: tw.div`w-full py-10`,
     Center: tw.div`flex flex-col text-white items-center justify-center`,
@@ -52,7 +57,7 @@ const SectionEight = () => {
               .fill("")
               .map((_) => (
                 <>
-                  <Card>
+                  <Card data-aos="zoom-out-down" data-aos-duration="2000">
                     <CardLayout>
                       <ImageLayout>
                         <div className="h-20 w-20 flex items-center justify-center bg-white rounded-lg absolute top-4 right-8 md:right-16 transition duration-300">

@@ -6,8 +6,13 @@ import { PageWrapper } from "@/components/layout";
 import Image from "next/image";
 import React from "react";
 import tw from "tailwind-styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SectionFive = () => {
+  React.useEffect(() => {
+    AOS.init();
+  });
   const SectionFiveStyles = {
     Layout: tw.section`w-full py-32`,
     Center: tw.div`flex flex-col text-white items-center justify-center gap-y-3 md:gap-y-0`,
@@ -48,7 +53,7 @@ const SectionFive = () => {
               .fill("")
               .map((_) => (
                 <>
-                  <Card>
+                  <Card data-aos="zoom-in-up" data-aos-duration="2000">
                     <Image
                       src={o8}
                       alt=""

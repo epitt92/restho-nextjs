@@ -7,8 +7,13 @@ import Image from "next/image";
 import React from "react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import tw from "tailwind-styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SectionFour = () => {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
   const SectionFourStyles = {
     Layout: tw.section`w-full py-10`,
     Justify: tw.div`flex flex-col md:flex-row items-center justify-center gap-y-4 md:justify-between`,
@@ -23,7 +28,7 @@ const SectionFour = () => {
     <PageWrapper classNames="bg-white">
       <Layout>
         <Justify>
-          <div className="flex flex-col items-center justify-center md:flex-none gap-y-3">
+          <div className="flex flex-col items-center justify-center gap-y-3">
             <div className="flex gap-x-2">
               <Image
                 src={
@@ -59,7 +64,7 @@ const SectionFour = () => {
             .fill("")
             .map((_) => (
               <>
-                <Card>
+                <Card data-aos="zoom-in-up" data-aos-duration="2000">
                   <CardLayout>
                     <Image
                       className="w-full h-auto object-cover align-middle rounded-t-2xl"

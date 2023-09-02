@@ -10,8 +10,13 @@ import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa";
 import { BsDot } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SectionSix = () => {
+  React.useEffect(() => {
+    AOS.init();
+  });
   const SectionFiveStyles = {
     Layout: tw.section`w-full py-32`,
     Center: tw.div`flex flex-col text-white items-center justify-center gap-y-3 md:gap-y-0`,
@@ -54,7 +59,7 @@ const SectionSix = () => {
               .fill("")
               .map((_) => (
                 <>
-                  <GridLayout>
+                  <GridLayout data-aos="flip-right" data-aos-duration="2000">
                     <div className="w-full border border-slate-200 rounded-2xl">
                       <Image
                         src={o9}

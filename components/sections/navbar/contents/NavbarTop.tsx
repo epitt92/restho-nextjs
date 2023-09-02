@@ -6,7 +6,7 @@ import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 const NavbarTop = () => {
   const NavbarTopStyles = {
     Layout: tw.div`flex justify-between px-20 w-full py-5`,
-    Flex: tw.div`md:flex items-center text-xl font-medium gap-x-12 text-[#f8f9fa]`,
+    Flex: tw.div`md:flex items-center text-xl font-medium gap-x-2 text-[#f8f9fa]`,
   };
   const { Layout, Flex } = NavbarTopStyles;
   return (
@@ -22,7 +22,7 @@ const NavbarTop = () => {
               9:00 am to 10:00 pm
             </Paragraph>
           </Flex>
-          <Flex className=" hidden">
+          <Flex className="gap-x-12 hidden">
             <Flex>
               <HiOutlineMail color="#ffc107" />
               <Paragraph>info@example</Paragraph>
