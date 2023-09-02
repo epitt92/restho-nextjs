@@ -10,7 +10,7 @@ import tw from "tailwind-styled-components";
 const SectionFive = () => {
   const SectionFiveStyles = {
     Layout: tw.section`w-full py-32`,
-    Center: tw.div`flex flex-col text-white items-center justify-center`,
+    Center: tw.div`flex flex-col text-white items-center justify-center gap-y-3 md:gap-y-0`,
     Grid: tw.div`grid grid-cols-6 gap-4 mt-10`,
     Card: tw.div`col-span-6 md:col-span-2`,
   };
@@ -39,7 +39,7 @@ const SectionFive = () => {
                 height={20}
               />
             </div>
-            <Heading className="text-6xl text-black">
+            <Heading className="text-5xl md:text-6xl text-center md:text-start text-black">
               Restho New Item List
             </Heading>
           </Center>

@@ -8,7 +8,7 @@ interface PageWrapperProps {
 
 const PageWrapper: React.FC<PageWrapperProps> = ({ children, classNames }) => {
   const PageWrapperStyles = {
-    Layout: tw.div`flex px-5 md:px-24 max-w-full md:max-w-[1440px] xl:max-w-full w-full mx-auto relative z-[99]`,
+    Layout: tw.div`flex px-2 md:px-24 max-w-full md:max-w-[1440px] xl:max-w-full w-full mx-auto relative z-[99]`,
   };
   const { Layout } = PageWrapperStyles;
   return (

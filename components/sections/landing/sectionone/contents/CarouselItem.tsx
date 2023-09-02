@@ -20,8 +20,8 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const CarouselItem = () => {
   const CarouselItem = {
-    Grid: tw.div`grid grid-cols-4 gap-x-10 justify-center items-center`,
-    Left: tw.div`col-span-4 md:col-span-2 text-white flex flex-col gap-y-12`,
+    Grid: tw.div`grid grid-cols-4 gap-x-10 justify-center items-center z-[99]`,
+    Left: tw.div`col-span-4 md:col-span-2 text-white flex flex-col gap-y-6 md:gap-y-12`,
     Right: tw.div`col-span-4 md:col-span-2 hidden md:block`,
   };
   const { Grid, Left, Right } = CarouselItem;

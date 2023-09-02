@@ -16,8 +16,10 @@ import {
 import Image from "next/image";
 import { Heading, Paragraph } from "@/components/common";
 import { o5 } from "@/assets";
+import { WH, WHSpace } from "@/utils/screensize";
 
 const ShowCaseCarousel = () => {
+  const screenWidth = window.innerWidth;
   const ShowCaseCarouselStyles = {
     Flex: tw.div`flex items-center justify-center`,
     ImageLayout: tw.div`z-[99]`,
@@ -30,8 +32,8 @@ const ShowCaseCarousel = () => {
         direction="horizontal"
         speed={3000}
         loop
-        slidesPerView={3}
-        spaceBetween={10}
+        slidesPerView={WH(screenWidth)}
+        spaceBetween={WHSpace(screenWidth)}
         centeredSlides={false}
         grabCursor={true}
         autoplay={{
@@ -72,7 +74,7 @@ const ShowCaseCarousel = () => {
                     alt=""
                     width={200}
                     height={200}
-                    className="w-full animate-spin duration-1000 h-auto"
+                    className="w-[16vh] md:w-full animate-spin duration-1000 h-auto"
                   />
                 </ImageLayout>
                 <ContentLayout>

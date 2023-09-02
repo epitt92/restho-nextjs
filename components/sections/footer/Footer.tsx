@@ -13,8 +13,8 @@ import { FaFacebookF } from "react-icons/fa";
 const Footer = () => {
   const FooterStyles = {
     Layout: tw.footer`w-full py-10`,
-    Grid: tw.div`grid grid-cols-6 gap-0 md:gap-x-40 justify-center items-center`,
-    GridLayout: tw.div`col-span-6 md:col-span-2`,
+    Grid: tw.div`grid grid-cols-6 gap-6 md:gap-x-40 justify-center items-center`,
+    GridLayout: tw.div`col-span-6 md:col-span-2 justify-center items-center`,
   };
   const { Layout, Grid, GridLayout } = FooterStyles;
   return (
@@ -59,7 +59,7 @@ const Footer = () => {
               </div>
             </GridLayout>
             <GridLayout>
-              <div className="w-[300px] h-[300px] flex relative justify-center items-center border border-[#bf9444] rounded-full">
+              <div className="w-[250px] md:w-[300px] h-[250px] md:h-[300px] flex relative justify-center items-center border border-[#bf9444] rounded-full">
                 <div className="flex flex-col items-center justify-center gap-y-4">
                   <Image
                     src="https://restho-nextjs.vercel.app/assets/images/header1-logo.svg"

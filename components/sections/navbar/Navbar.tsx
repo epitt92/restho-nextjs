@@ -11,6 +11,7 @@ import cx from "classnames";
 import { NavItems } from "@/utils/data";
 import { BsArrowDownShort } from "react-icons/bs";
 import Link from "next/link";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const NavListDesktop = () => {
   const Styles = {
@@ -105,12 +106,13 @@ const Navbar = () => {
             alt="logo"
             width={200}
             height={200}
-            className="cursor-pointer"
+            className="cursor-pointer w-[10vh] md:w-[30vh]"
           />
           {/*  */}
           <NavListDesktop />
           {/*  */}
-          <Button className="bg-[#bf9444] px-10 py-4 rounded-full text-[#ffffffcc]">
+          <AiOutlineMenu className="block md:hidden cursor-pointer" size={16} />
+          <Button className="bg-[#bf9444] hidden md:block px-10 py-4 rounded-full text-[#ffffffcc]">
             Find Reservation
           </Button>
         </Nav>

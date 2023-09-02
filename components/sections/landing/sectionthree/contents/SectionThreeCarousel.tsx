@@ -16,8 +16,10 @@ import {
 import Image from "next/image";
 import { Heading, Paragraph } from "@/components/common";
 import { o6 } from "@/assets";
+import { WH } from "@/utils/screensize";
 
 const SectionThreeCarousel = () => {
+  const screenWidth = window.innerWidth;
   const SectionThreeCarousel = {
     ImageFrame: tw.div`relative`,
     Content: tw.div`flex items-center justify-center pb-20 absolute bottom-[0px] left-1/2 -translate-x-1/2 z-[999]`,
@@ -29,7 +31,7 @@ const SectionThreeCarousel = () => {
         direction="horizontal"
         speed={3000}
         loop
-        slidesPerView={3}
+        slidesPerView={WH(screenWidth)}
         spaceBetween={10}
         centeredSlides={false}
         grabCursor={true}

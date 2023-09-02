@@ -37,7 +37,9 @@ const SectionThree = () => {
                 height={20}
               />
             </div>
-            <Heading className="text-6xl">Restho New Item List</Heading>
+            <Heading className="text-5xl md:text-6xl text-center md:text-start">
+              Restho New Item List
+            </Heading>
             <Paragraph>
               Various versions have evolved over the years, sometimes on
               purpose.

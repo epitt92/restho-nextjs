@@ -10,7 +10,7 @@ const SectionSeven = () => {
   const SectionSevenStyles = {
     Layout: tw.div`w-full`,
     Center: tw.div`flex flex-col text-white items-center justify-center`,
-    Grid: tw.div`grid grid-cols-4 gap-x-4 gap-y-6 px-0 md:px-40 mt-12`,
+    Grid: tw.div`grid grid-cols-4 gap-x-4 gap-y-6 px-3 md:px-40 mt-12`,
     Card: tw.div`col-span-4 md:col-span-2`,
   };
   const { Layout, Center, Grid, Card } = SectionSevenStyles;
@@ -37,7 +37,9 @@ const SectionSeven = () => {
               height={20}
             />
           </div>
-          <Heading className="text-6xl mt-2">For Online Reservation</Heading>
+          <Heading className="text-5xl md:text-6xl text-center md:text-start mt-2">
+            For Online Reservation
+          </Heading>
         </Center>
         {/*  */}
         <Grid>

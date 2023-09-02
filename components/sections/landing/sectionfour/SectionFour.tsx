@@ -11,7 +11,7 @@ import tw from "tailwind-styled-components";
 const SectionFour = () => {
   const SectionFourStyles = {
     Layout: tw.section`w-full py-10`,
-    Justify: tw.div`flex  items-center justify-between`,
+    Justify: tw.div`flex flex-col md:flex-row items-center justify-center gap-y-4 md:justify-between`,
     Grid: tw.ul`grid grid-cols-6 gap-8 mt-10`,
     Card: tw.li`col-span-6 md:col-span-2 group`,
     CardLayout: tw.div`w-full border border-slate-100 rounded-2xl relative`,
@@ -23,7 +23,7 @@ const SectionFour = () => {
     <PageWrapper classNames="bg-white">
       <Layout>
         <Justify>
-          <div>
+          <div className="flex flex-col items-center justify-center md:flex-none gap-y-3">
             <div className="flex gap-x-2">
               <Image
                 src={
@@ -43,7 +43,7 @@ const SectionFour = () => {
                 height={20}
               />
             </div>
-            <Heading className="text-6xl font-medium">
+            <Heading className="text-5xl md:text-6xl font-medium text-center md:text-start">
               Find Your Food Item
             </Heading>
           </div>

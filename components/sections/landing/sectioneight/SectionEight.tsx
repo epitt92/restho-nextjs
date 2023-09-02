@@ -42,7 +42,9 @@ const SectionEight = () => {
                 height={20}
               />
             </div>
-            <Heading className="text-6xl text-black">Our Latest Blog</Heading>
+            <Heading className="text-5xl md:text-6xl text-center md:text-start text-black">
+              Our Latest Blog
+            </Heading>
           </Center>
           {/*  */}
           <Grid>
@@ -53,7 +55,7 @@ const SectionEight = () => {
                   <Card>
                     <CardLayout>
                       <ImageLayout>
-                        <div className="h-20 w-20 flex items-center justify-center bg-white rounded-lg absolute top-4 right-16 transition duration-300">
+                        <div className="h-20 w-20 flex items-center justify-center bg-white rounded-lg absolute top-4 right-8 md:right-16 transition duration-300">
                           <a
                             href="#"
                             className="w-full flex flex-col justify-center items-center h-full rounded-lg"

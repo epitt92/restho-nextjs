@@ -8,24 +8,26 @@ import tw from "tailwind-styled-components";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import { o1, o2, o3, o4 } from "@/assets";
 import ShowCaseCarousel from "./ShowCaseCarousel";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const KiteRight = () => {
   return (
-    <div className="w-[250px] h-auto p-4">
+    <div className="w-[150px] md:w-[250px] h-auto p-4">
       <Image src={o2} alt="" width={250} height={250} />
     </div>
   );
 };
 const KiteLeft = () => {
   return (
-    <div className="w-[250px] h-auto  p-4">
+    <div className="w-[150px] md:w-[250px] h-auto  p-4">
       <Image src={o3} alt="" width={250} height={250} />
     </div>
   );
 };
 const KiteTop = () => {
   return (
-    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[250px] h-[250px] border-b-16 border-yellow-500 border-solid">
+    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[150px] md:w-[250px] h-[150px] md:h-[250px] border-b-16 border-yellow-500 border-solid">
       <Image src={o1} alt="" width={250} height={250} />
     </div>
   );
@@ -33,7 +35,7 @@ const KiteTop = () => {
 
 const KiteBottom = () => {
   return (
-    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[250px] h-[250px] border-t-16 border-red-500 border-solid">
+    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[150px] md:w-[250px] h-[150px] md:h-[250px] border-t-16 border-red-500 border-solid">
       <Image src={o4} alt="" width={250} height={250} />
     </div>
   );
@@ -41,7 +43,7 @@ const KiteBottom = () => {
 
 const KiteLayout = () => {
   return (
-    <div className="flex justify-center items-center h-[500px]  w-full">
+    <div className="flex justify-center items-center h-[300px] md:h-[500px]  w-full">
       <div className="relative h-full">
         <KiteTop />
         <div className="flex absolute top-1/2 -translate-y-1/2 left-1/2 transform -translate-x-1/2 ">
@@ -56,12 +58,12 @@ const KiteLayout = () => {
 
 const ShowCase = () => {
   const ShowCaseStyles = {
-    Layout: tw.div`p-20 w-full`,
+    Layout: tw.div`px-0 py-20 md:px-20 md:py-20 w-full`,
     Grid: tw.section`grid grid-cols-7 gap-x-5 pt-20`,
-    Right: tw.div`col-span-7 md:col-span-4`,
+    Right: tw.div`col-span-7 md:col-span-4 sm:justify-center sm:items-center `,
     Left: tw.div`col-span-7 md:col-span-3`,
     Col: tw.div`h-[30vh] flex flex-col justify-center max-w-[40%] w-full gap-y-3`,
-    Row: tw.div`grid grid-cols-4 gap-3 justify-center items-center`,
+    Row: tw.div`grid grid-cols-4 gap-3 justify-center items-center py-4 md:py-0`,
   };
   const { Layout, Grid, Left, Right, Col, Row } = ShowCaseStyles;
   return (
@@ -113,10 +115,10 @@ const ShowCase = () => {
                   ({ description, id, image, title }, _) => (
                     <>
                       <Row key={id}>
-                        <div className="col-span-1 border border-[#bf9444] rounded-xl flex items-center justify-center p-2">
+                        <div className="col-span-4 md:col-span-1 border border-[#bf9444] rounded-xl flex items-center justify-center p-2">
                           <Image src={image} alt="" width={50} height={50} />
                         </div>
-                        <div className="col-span-3">
+                        <div className="col-span-4 md:col-span-3">
                           <Paragraph className="text-2xl font-medium">
                             {title}
                           </Paragraph>
