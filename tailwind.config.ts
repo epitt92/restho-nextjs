@@ -13,6 +13,10 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      animation: {
+        'up-down': 'up-down 5s linear infinite alternate',
+        'up-down-xx': 'up-down 7s linear infinite alternate',
+      },
     },
   },
   plugins: [],
