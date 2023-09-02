@@ -16,7 +16,6 @@ interface FormProps<Values> {
   submitButtonDisabled?: boolean;
   showLabel?: boolean;
 }
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ReusableForm: React.FC<FormProps<any>> = ({
   fields,
   initialValues,
