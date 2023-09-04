@@ -64,7 +64,7 @@ const SectionFour = () => {
             .fill("")
             .map((_) => (
               <>
-                <Card data-aos="zoom-in-up" data-aos-duration="2000">
+                <Card data-aos="zoom-in-up" data-aos-duration="1000">
                   <CardLayout>
                     <Image
                       className="w-full h-auto object-cover align-middle rounded-t-2xl"

@@ -46,13 +46,13 @@ const SectionSeven = () => {
             For Online Reservation
           </Heading>
         </Center>
-        {/*  */}
+        {/* data-aos="zoom-in-up" data-aos-duration="1000" */}
         <Grid>
           {Array(6)
             .fill("")
             .map((_) => (
               <>
-                <Card key={_} data-aos="zoom-in-up" data-aos-duration="2000">
+                <Card key={_}>
                   <Input
                     className="w-full bg-[#09161d] border border-slate-300 outline-none focus:border-[#bf9444] focus-within:border-[#bf9444] transition duration-100 rounded-[50px] px-4 py-6 placeholder:text-base text-base text-white font-normal"
                     placeholder="Name*"

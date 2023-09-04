@@ -59,7 +59,8 @@ const SectionSix = () => {
               .fill("")
               .map((_) => (
                 <>
-                  <GridLayout data-aos="flip-right" data-aos-duration="2000">
+                  {/* data-aos="flip-right" data-aos-duration="1000" */}
+                  <GridLayout>
                     <div className="w-full border border-slate-200 rounded-2xl">
                       <Image
                         src={o9}

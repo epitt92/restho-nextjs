@@ -57,7 +57,7 @@ const SectionEight = () => {
               .fill("")
               .map((_) => (
                 <>
-                  <Card data-aos="zoom-out-down" data-aos-duration="2000">
+                  <Card data-aos="zoom-out-down" data-aos-duration="1000">
                     <CardLayout>
                       <ImageLayout>
                         <div className="h-20 w-20 flex items-center justify-center bg-white rounded-lg absolute top-4 right-8 md:right-16 transition duration-300">

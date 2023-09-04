@@ -53,7 +53,7 @@ const SectionFive = () => {
               .fill("")
               .map((_) => (
                 <>
-                  <Card data-aos="zoom-in-up" data-aos-duration="2000">
+                  <Card data-aos="zoom-in-up" data-aos-duration="1000">
                     <Image
                       src={o8}
                       alt=""

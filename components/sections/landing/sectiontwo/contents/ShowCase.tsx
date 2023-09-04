@@ -76,10 +76,10 @@ const ShowCase = () => {
           {/* CAROUSEL COMPONENT */}
           <ShowCaseCarousel />
           <Grid>
-            <Left data-aos="zoom-in-up" data-aos-duration="2000">
+            <Left data-aos="zoom-in-up" data-aos-duration="1000">
               <KiteLayout />
             </Left>
-            <Right data-aos="zoom-in-down" data-aos-duration="2000">
+            <Right data-aos="zoom-in-down" data-aos-duration="1000">
               <div className="flex gap-x-2">
                 <Image
                   src={
